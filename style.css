@@ -1,0 +1,70 @@
+:root  {
+    --color-first-box: #00234c;
+    --color-second-box: #014092;
+    --color-third-box: #0149a8;
+    --color-four-box: #0252bb;
+    --color-five-box: #005ad0;
+
+}
+
+
+
+.body{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container section{
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.caja1{
+    background-color: var(--color-first-box);
+}
+
+.caja2{
+    background-color: #014092;
+}
+
+.caja3{
+    background-color: #0149a8;
+}
+
+.caja4{
+    background-color: #0252bb;
+}
+
+.caja5{
+    background-color: #005ad0;
+}
+
+.caja1, .caja2, .caja3, .caja4, .caja5 {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .caja2, .caja3, .caja4, .caja5 {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .caja1{
+        width: 40%;
+    }
+    .caja2{
+        width: 60%;
+    }
+    .caja3, .caja4, .caja5 {
+        width: 33.33%;
+    }
+}
